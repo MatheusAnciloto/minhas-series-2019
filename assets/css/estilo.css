@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* header */
 .header{
   background-color: #C0392B;
   background-image: linear-gradient(#C0392B, #E74C3C);
 }
-.header--title{
+.header__title{
 color: #FFFFFF;
 text-shadow: 1px 1px 3px #000000; 
 font-family: 'Roboto', sans-serif;
@@ -18,11 +22,40 @@ font-size: 32px;
 padding: 30px;
 text-align: center;
 }
-.header--title-bgwhite{
+
+@media(min-width: 600px){
+  .header__title{
+    text-align: left;
+  }
+}
+
+.header__title--bgwhite{
   color: #C0392B;
   background-color: #FFFFFF;
   padding: 6px;
   border-radius: 6px;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width: 600px){
+  .menu{
+    flex-direction: row;
+  }
+}
+
+.menu__item > a{
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.menu__item > a:hover{
+  color: #C0392B;
+  background-color: #fff;
 }
 
 /* serie cover main page */
