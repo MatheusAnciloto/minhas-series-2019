@@ -1,9 +1,96 @@
-<!-- 
-  Exercício 11: construa o fomulário; faça a estilização.
- -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <style>
+    *{padding: 0; margin:0; box-sizing: border-box;
+    }
 
- Formulários
-Nome:
+    .container{
+      margin: 10px;
+    }
+
+    .form-field{
+      padding: 5px;
+      border: 0;
+      border-bottom: 1px #a51c1c solid;
+    }
+    .btn-salvar{
+      border: 0;
+      padding: 5px;
+      color: white;
+      background-color: green;
+      cursor: pointer;
+    }
+    .btn-salvar:hover{
+      background-color: rgb(23, 139, 23);
+    }
+    .label{
+      min-width: 110px;
+      display: inline-block;
+    }
+    .textarea{
+      border: 1px #a51c1c solid;
+      resize: none;
+    }
+    .estados{
+      color: #a51c1c;
+      min-width: 150px;
+    }
+  </style>
+</head>
+<body>   
+  <h1>Formulários</h1>
+
+  <form>  
+    <div class="container">
+      <label class="label" for="nome">Nome: </label>
+      <input type="text" class="form-field" id="nome" placeholder="Informe seu nome aqui" required>    
+    </div>
+    <div class="container">
+      <label class="label" for="nome">Sobrenome: </label>
+      <input class="form-field" type="text" id="sobrenome">    
+    </div>
+    <div class="container">
+      <label for="idade" class="label">Idade: </label>
+      <input type="number" class="form-field" id="idade" min="10" max="32" required>
+    </div>
+    <div class="container">
+      <label class="label" for="idade">Fone: </label>
+      <input type="text" class="form-field" id="fone" pattern="^[0-9]{5}-[0-9]{4}" placeholder="98444-7828">
+    </div>
+    <div class="container">
+      <label class="label" for="">Sexo: </label>
+      <input type="radio" id="sexo-masc" name="sexo">
+      <label for="sexo-masc">Masculino</label>
+      <input type="radio" id="sexo-fem" name="sexo">
+      <label for="sexo-fem">Feminino</label>
+    </div>
+    <div class="container">
+      <input type="checkbox" id="email">
+      <label class="label" for="email">Deseja receber emails?</label>
+    </div>
+    <div class="container">
+      <label class="label" for="estado">Estado: </label>
+      <select id="estado" class="estados">
+        <option value="">Amazônia</option>
+        <option value="">Acre</option>
+        <option value="">Rondônia</option>
+        <option value="">Roraima</option>
+      </select>
+    </div>
+    <div class="container" style="display: flex">
+      <label class="label" for="obs">Observações</label>
+      <textarea id="obs" cols="30" rows="10" class="textarea"></textarea>
+    </div>
+    <div class="container">
+      <input class="btn-salvar" type="submit" value="Cadastrar">
+    </div>
+  </form>
+
+<!-- Nome:
 Idade:
 Sexo: (masculino, feminino)
 Estado:
@@ -14,4 +101,12 @@ Estado:
   - Roraima
   - Tocantins
 Mensagem:
-Aceita os termos do contrato?
+Aceita os termos do contrato? -->
+
+</body>
+</html>
+
+
+<!-- 
+  Exercício 11: construa o fomulário; faça a estilização.
+ -->

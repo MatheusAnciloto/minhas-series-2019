@@ -130,6 +130,26 @@ padding: 30px;
     padding: 20px;
   }
 
+.email{
+  display: inline-block;
+  border: 1px solid #C0392B;
+  border-radius: 5px 0 0 5px;
+  background: #EEEEEE;
+  width: 278px;
+  height: 33px;
+  
+}
+.button{
+  display: inline-block;
+  background-color: #C0392B;
+  border: 1px solid #C0392B;
+  border-radius: 0 5px 5px 0;
+  width: 56px;
+  height: 33px;
+  color: white;
+  position: absolute;
+}
+
 /* serie cover main page */
 .seriedetail{
   text-align: center;
@@ -208,5 +228,34 @@ padding: 30px;
 
 
 
+/* Teste em formulários */
+.form-field{
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px #C0392B solid;
+}
+.btn-salvar{
+  border: 0;
+  padding: 5px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.btn-salvar:hover{
+  background-color: #178b17;
+}
+.label{
+  min-width: 110px;
+  display: inline-block;
+}
+.label-radio{
+  min-width: 110px;
+  display: inline-block;
+  margin: 15px;
+}
+.textarea{
+  border: 1px #C0392B solid;
+  resize: none;
+}
 
 

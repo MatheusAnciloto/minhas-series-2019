@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Séries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/estilo.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__title container">
+      Minhas <span class="header__title--bgwhite">SÉRIES</span> 
+    </div>
+    <nav>
+      <ul class="menu container">
+        <li class="menu__item"><a href="#">Início</a></li>
+        <li class="menu__item"><a href="#">Séries renovadas</a></li>
+        <li class="menu__item"><a href="#">Séries em destaques</a></li>
+        <li class="menu__item"><a href="#">Novas Séries</a></li>
+        <li class="menu__item"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main class="container">
+      <br><br>
+     <div class="">
+       <label class="label" for="nome">Nome: </label>
+       <input class="form-field" type="text" id="nome">
+     </div>
+     <div class="">
+       <label class="label" for="email">Email: </label>
+       <input class="form-field" type="email" id="email">
+     </div>
+     <div>
+       <label class="label" for="number">Telefone: </label>
+       <input class="form-field" type="text" id="number">
+     </div>
+     <div>
+       <label class="label-radio" for="">Sexo: </label>
+       <input type="radio" name="sexo" id="sex-masc">
+       <label for="sex-masc">Masculino</label>
+       <input type="radio" name="sexo" id="sex-fem">
+       <label for="sex-fem">Feminino</label>
+     </div>
+     <div>
+       <label class="label" for="obs" >Deixe seu recado: </label>
+       <textarea class="textarea" type="textarea" id="obs" cols="30" rows="10"></textarea>
+     </div>
+     <div>
+      <input type="checkbox" id="email">
+      <label class="label-radio" for="email">Deseja receber emails?</label>
+    </div>
+    <div>
+      <input type="button" id="button" class="btn-salvar" value="Enviar">
+    </div>
+     <br>
+     <br> 
+    </main>
+
+    <footer class="footer">
+      <div class="footer__element container">
+       Receba as novidades
+       <div>
+         <input class="email" type="text" id="email" placeholder="fulano@email.com">
+         <input class="button" type="button" id="ok" value="OK">
+       </div>
+      </div>
+      <div class="footer__element container">
+        <div>Nos siga em nossas redes sociais:</div>
+        <div>
+          <img src="assets/images/facebook.svg" alt="" class="footer__image">
+          <img src="assets/images/twitter.svg" alt="" class="footer__image">
+          <img src="assets/images/youtube.svg" alt="" class="footer__image">
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
